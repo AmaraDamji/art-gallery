@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
-
   <head>
     <meta charset="UTF-8">
 
-    <title>Home Page</title>
+    <title>Art Gallery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,174 +11,240 @@
 
     <!-- created by amara damji on November 18 -->
     <style>
-      body,
-      h1,
-      h2,
-      h3,
-      p,
-      ul {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      h1,
-      h3 {
-        font-family: "Amarante", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      h2 {
-        font-family: "Fascinate Inline", system-ui;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      body {
-        font-family: "DynaPuff", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-        background-color: #f8ccd7;
-        color: #fff;
-      }
-
-      .bio-heading {
-        font-family: "Fascinate Inline", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: #FF8061;
-        text-align: center;
-        margin-bottom: 15px;
-      }
-
-      /* Navigation Bar */
-      .navbar {
-        background-color: #FF8061;
-        padding: 10px 20px;
+      .visua-art {
+        background-color: #ffe5f0;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-
-      .navbar a {
-        text-decoration: none;
-        color: #fff;
-        margin: 10px;
-        font-weight: bold;
-      }
-
-      /* Main Content */
-      .containerA {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .left-section {
-        flex: 1;
-        text-align: left;
-      }
-
-      .left-section .title {
-        font-size: 40px;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 10px;
-      }
-
-      .left-section .subtitle {
-        font-size: 19.2px;
-        color: #fff;
-        margin-bottom: 30px;
-      }
-
-      .right-section {
-        flex: 2;
-        text-align: left;
-        background: #fff;
-        color: #4a4a4a;
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .right-section .photo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto 20px;
-      }
-
-      .right-section .photo img {
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
-        height: 100%;
+      }
+
+      .visua-art .div {
+        background-color: #ffe5f0;
+        overflow: hidden;
+        width: 1440px;
+        height: 3182px;
+        position: relative;
+      }
+
+      .visua-art .overlap {
+        position: absolute;
+        width: 1440px;
+        height: 2978px;
+        top: 0;
+        left: 0;
+      }
+
+      .visua-art .overlap-group {
+        position: absolute;
+        width: 1440px;
+        height: 2476px;
+        top: 0;
+        left: 0;
+      }
+
+      .visua-art .overlap-2 {
+        position: absolute;
+        width: 1440px;
+        height: 2008px;
+        top: 0;
+        left: 0;
+      }
+
+      .visua-art .vector {
+        position: absolute;
+        width: 1440px;
+        height: 1282px;
+        top: 0;
+        left: 0;
+      }
+
+      .visua-art .text-wrapper {
+        position: absolute;
+        width: 891px;
+        top: 140px;
+        left: 506px;
+        font-family: "DynaPuff";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 40px;
+        text-align: right;
+        letter-spacing: 2.00px;
+        line-height: 70px;
+      }
+
+      .visua-art .rectangle {
+        position: absolute;
+        width: 488px;
+        height: 763px;
+        top: 883px;
+        left: 38px;
         object-fit: cover;
       }
 
-      .right-section p {
-        font-size: 16px;
-        line-height: 1.6;
+      .visua-art .img {
+        position: absolute;
+        width: 519px;
+        height: 764px;
+        top: 1244px;
+        left: 643px;
+        object-fit: cover;
       }
 
-      /* Footer Text */
-      .footer {
-        margin-top: 20px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
+      .visua-art .vector-wrapper {
+        position: absolute;
+        width: 545px;
+        height: 725px;
+        top: 1751px;
+        left: 62px;
+        background-image: url(./img/rectangle-11.png);
+        background-size: cover;
+        background-position: 50% 50%;
       }
-      
+
+      .visua-art .vector-2 {
+        position: absolute;
+        width: 265px;
+        height: 123px;
+        top: 22px;
+        left: 40px;
+      }
+
+      .visua-art .vector-3 {
+        position: absolute;
+        width: 426px;
+        height: 395px;
+        top: 2042px;
+        left: 945px;
+      }
+
+      .visua-art .rectangle-2 {
+        position: absolute;
+        width: 763px;
+        height: 510px;
+        top: 2468px;
+        left: 647px;
+      }
+
+      .visua-art .group {
+        position: absolute;
+        width: 488px;
+        height: 488px;
+        top: 2614px;
+        left: 78px;
+      }
+
+
+      .visua-art .overlap-group-wrapper {
+        position: fixed;
+        width: 1502px;
+        height: 110px;
+        top: 0;
+        left: -36px;
+      }
+
+      .visua-art .overlap-group-2 {
+        position: relative;
+        width: 1494px;
+        height: 110px;
+        background-color: #ff8060;
+      }
+
+      .visua-art .text-wrapper-2 {
+        position: absolute;
+        width: 180px;
+        top: 41px;
+        left: 812px;
+        font-family: "Amaranth";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .visua-art .text-wrapper-3 {
+        position: absolute;
+        width: 180px;
+        top: 41px;
+        left: 1038px;
+        font-family: "Amarante";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .visua-art .text-wrapper-4 {
+        position: absolute;
+        width: 180px;
+        top: 41px;
+        left: 1263px;
+        font-family: "Amarante";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .visua-art .text-wrapper-5 {
+        position: absolute;
+        width: 63px;
+        top: 25px;
+        left: 71px;
+        font-family: "Amarante";
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
     </style>
   </head>
 
   <body>
-    <!-- Navigation -->
-    <div class="navbar">
+    <div class="visua-art">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="overlap-2">
+              <img class="vector" src="Vector 1.png">
+              <p class="text-wrapper">
+                Art has always been a passion of mine, especially digital art, which is my favorite medium. I also have
+                experience with traditional materials like charcoal, pastel, acrylic, and pencil. I love working with
+                bright, saturated colors and drawing characters with unique designs, often inspired by comics and other
+                media. Creating art is a relaxing and joyful way for me to pass the time. I hope you enjoy my little
+                gallery!
+              </p>
+              <img class="rectangle" src="Rectangle 9.png">
+              <img class="img" src="Rectangle 10.png">
 
-      <h3>
-        <div>AD</div>
-      </h3>
-      <div>
-        <h3>
-          <a href="#">Graphic Design</a>
-          <a href="#">Visual Art</a>
-          <a href="#">Personal Life</a>
-        </h3>
-      </div>
-    </div>
+            </div>
+            <div class="vector-wrapper"><img class="vector-2" src="vector 2.svg">
 
-    <!-- Main Section -->
-    <div class="containerA">
-      <!-- Left Section -->
-      <div class="left-section">
-        <h1 class="title">Amara Damji</h1>
-        <h3 class="subtitle">Portfolio</h3>
-      </div>
+              <img class="vector-3" src="Vector.png">
+              <img class="rectangle-2" src="Rectangle 12.png">
 
-      <!-- Right Section -->
-      <div class="right-section">
-        <h2 class="bio-heading">Hello!</h2>
-        <div class="photo">
-          <img src="https://via.placeholder.com/150" alt="Profile Photo">
+            </div>
+            <img class="group" src="Group 3.png">
+
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group-2">
+                <div class="text-wrapper-2">Graphic Design</div>
+                <div class="text-wrapper-3">Visual Art</div>
+                <div class="text-wrapper-4">Personal Life</div>
+                <div class="text-wrapper-5">AD</div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <p>
-          Hi there! I'm Amara, a GBDA student at the University of Waterloo. Welcome to my portfolio, where I showcase my work and share some of my experiences. I'm passionate about the arts, both visual and theatrical, and I love traveling, baking, and spending time with friends. Thanks for visiting—I hope you enjoy exploring my site!
-        </p>
       </div>
     </div>
-
-    <!-- Footer -->
-    <h2>
-      <div class="footer">Come get a glimpse of my mind</div>
-    </h2>
   </body>
-
 </html>
