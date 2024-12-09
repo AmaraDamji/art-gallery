@@ -11,52 +11,60 @@
 
     <!-- created by amara damji on November 18 -->
     <style>
-      .visua-art {
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: "Fascinate Inline", sans-serif;
         background-color: #ffe5f0;
+      }
+
+      .home {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         width: 100%;
+        min-height: 100%;
       }
 
       .div {
-        background-color: #ffe5f0;
-        overflow: hidden;
         width: 1440px;
-        height: 3182px;
+        min-height: 100%;
         position: relative;
+        background-color: #ffe5f0;
       }
 
       .overlap {
         position: absolute;
         width: 1440px;
-        height: 2978px;
-        top: 0;
-        left: 0;
+        height: 2148px;
+        top: 0px;
+        left: 0px;
       }
 
       .overlap-group {
         position: absolute;
         width: 1440px;
-        height: 2476px;
-        top: 0;
-        left: 0;
+        height: 1571px;
+        top: 0px;
+        left: 0px;
       }
 
       .overlap-2 {
         position: absolute;
         width: 1440px;
-        height: 2008px;
-        top: 0;
-        left: 0;
+        height: 1440px;
+        top: 0px;
+        left: 0px;
       }
 
       .vector {
         position: absolute;
         width: 1440px;
-        height: 1282px;
-        top: 0;
-        left: 0;
+        height: 903px;
+        top: 0px;
+        left: 0px;
       }
 
       .text-wrapper {
@@ -66,116 +74,63 @@
         left: 506px;
         font-family: "DynaPuff";
         font-weight: 400;
-        color: #ffffff;
-        font-size: 40px;
+        color: #fff;
+        font-size: 24px;
         text-align: right;
-        letter-spacing: 2.00px;
+        letter-spacing: 1.20px;
         line-height: 70px;
       }
 
-      .rectangle {
+      .sunflowers {
         position: absolute;
-        width: 488px;
-        height: 763px;
-        top: 883px;
-        left: 38px;
+        width: 428px;
+        height: 637px;
+        top: 803px;
+        left: 141px;
         object-fit: cover;
       }
 
-      .group-2 {
+      .starfire {
         position: absolute;
-        width: 488px;
-        height: 488px;
-        top: 2614px;
-        left: 78px;
-      }
-
-      .img {
-        position: absolute;
-        width: 519px;
-        height: 764px;
-        top: 1244px;
-        left: 643px;
+        width: 428px;
+        height: 637px;
+        top: 933px;
+        left: 752px;
         object-fit: cover;
       }
 
-      .vector-wrapper {
+      .ophelia {
         position: absolute;
-        width: 545px;
-        height: 725px;
-        top: 1751px;
-        left: 62px;
-        background-image: url(./img/rectangle-11.png);
-        background-size: cover;
-        background-position: 50% 50%;
+        width: 428px;
+        height: 637px;
+        top: 1542px;
+        left: 126px;
       }
 
-      .vector-2 {
+      .beetle {
         position: absolute;
-        width: 265px;
-        height: 123px;
-        top: 22px;
-        left: 40px;
+        width: 429px;
+        height: 410px;
+        top: 2249px;
+        left: 141px;
       }
 
-      .vector-3 {
+      .ladybug {
         position: absolute;
-        width: 426px;
-        height: 395px;
-        top: 2042px;
-        left: 945px;
+        width: 540px;
+        height: 467px;
+        top: 1667px;
+        left: 710px;
       }
 
-      .rectangle-2 {
+      .character {
         position: absolute;
-        width: 763px;
-        height: 510px;
-        top: 2468px;
-        left: 647px;
+        width: 667px;
+        height: 428px;
+        top: 2231px;
+        left: 646px;
       }
 
-      .group {
-        position: absolute;
-        width: 488px;
-        height: 488px;
-        top: 2614px;
-        left: 78px;
-      }
-
-      .overlap-group-2 {
-        position: relative;
-        width: 1494px;
-        height: 110px;
-        background-color: #ff8060;
-      }
-
-      .text-wrapper-2 {
-        position: absolute;
-        width: 180px;
-        top: 41px;
-        left: 812px;
-        font-family: "Amarante";
-        font-weight: 400;
-        color: #ffffff;
-        font-size: 24px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
-
-      .text-wrapper-3 {
-        position: absolute;
-        width: 180px;
-        top: 41px;
-        left: 1038px;
-        font-family: "Amarante";
-        font-weight: 400;
-        color: #ffffff;
-        font-size: 24px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
 
       /* Navbar container */
       .overlap-wrapper {
